@@ -1,0 +1,1 @@
+Estudando promises que faz parte do js assincrono, pois vi necessidade de ter mais base.Já revisei promises

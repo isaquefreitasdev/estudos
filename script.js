@@ -1,23 +1,16 @@
-function adicione(nome){
-    setTimeout(function(resolve,reject){
-        let error = false;
-        if(!error){
-            resolve();
-        }else{
-            reject({msg:'Error'});
-        }
-        sistem.login.push(nome)
-    },10000)
+function jogadores(nome, position) {
+    return { nome, position }
 }
-function mostreUsu(){
-    console.log(sistem.login)
+let players = [jogadores('Isaque', 'atacante'),
+jogadores('Neymar', 'Ponta esquerda'),
+jogadores('Cristiano Ronaldo', 'Ponta esquerda'),
+jogadores('Messi', 'atacante')]
+
+
+function fitroPE(jogador){
+    return jogador.position == 'Ponta esquerda'
 }
 
-let sistem  = {
-    login:['Isaque','João'],
-    add:adicione
-}
-adicione("Pedro").then(mostreUsu).catch((error)=>{
-    console.log(error.msg)
-})
 
+let pontasesq = players.filter(fitroPE);
+console.log(pontasesq)
