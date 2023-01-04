@@ -7,10 +7,10 @@ jogadores('Cristiano Ronaldo', 'Ponta esquerda'),
 jogadores('Messi', 'atacante')]
 
 
-function fitroPE(jogador){
-    return jogador.position == 'Ponta esquerda'
+function fitroPE(jogadores){
+    return jogadores.nome + ' é ' + jogadores.position
 }
 
 
-let pontasesq = players.filter(fitroPE);
+let pontasesq = players.map(fitroPE);
 console.log(pontasesq)
