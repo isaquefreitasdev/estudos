@@ -1,1 +1,1 @@
-Estudando promises que faz parte do js assincrono, pois vi necessidade de ter mais base.Já revisei promises
+Buscando um framework para aprender ou me aprofundar mais js avançado
