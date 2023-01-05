@@ -1,16 +1,19 @@
-function jogadores(nome, position) {
-    return { nome, position }
-}
-let players = [jogadores('Isaque', 'atacante'),
-jogadores('Neymar', 'Ponta esquerda'),
-jogadores('Cristiano Ronaldo', 'Ponta esquerda'),
-jogadores('Messi', 'atacante')]
-
-
-function fitroPE(jogadores){
-    return jogadores.nome + ' é ' + jogadores.position
+let dataPerson = {
+    nome:'Isaque',
+    idade:17,
+    cpf:394782038
 }
 
+let jobs = {
+    one:'programmer',
+    two:'editor',
+    three:'social media'
+}
 
-let pontasesq = players.map(fitroPE);
-console.log(pontasesq)
+
+
+let every = {...dataPerson,...jobs}
+
+
+
+console.log(every);
