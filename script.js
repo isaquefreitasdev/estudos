@@ -1,9 +1,13 @@
-let notas = [10,2,4,8,4,7,2,4,5,5,6,7,8,9,3,1,8,7]
+let arg = process.argv.slice(2)
 
-function filte(){
-    for(nota of notas){
-        return notas > 6
-    }
+let a = arg[0]
+let b = arg[1]
 
+
+
+let c = mu(a, b)
+function mu(x, z) {
+    return x * z
 }
-console.log(filte())''
+
+console.log(c)
